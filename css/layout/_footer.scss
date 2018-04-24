@@ -1,0 +1,44 @@
+.footer {
+	height: $footer-height;
+	line-height: $footer-height;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	background-color: $green;
+	&.error {
+		background-color: $purpure;
+		.order-action {
+			width: 217px;
+			@include large-screen {
+				width: 100%;
+				br {
+					display: none;
+				}
+			}	
+		}
+	}
+	.order-action {
+		margin: auto;
+		width: 234px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		@include body-text;
+		font: 16px 'pragmaticalightcregular';
+		color: $white;
+		@include large-screen {
+			width: 100%;
+		}
+	}
+	.close-icon {
+		position: absolute;
+		top: $padding-normal;
+		right: $padding-normal;
+		img {
+			display: block;		
+			width: 16px;
+			height: 16px;
+		}
+	}
+}	

@@ -1,0 +1,11 @@
+
+@each $item in money-transfer, mobile, cashpower, e-commerce, profile, users-list, settings, logout {
+	.#{$item}-item {
+		display: inline-block;
+		background: url('../img/#{$item}.png') no-repeat 25px center;
+		@include large-screen {
+			background-size: 18px 18px;
+			background-position: $padding-small center;
+		}
+	}	
+}

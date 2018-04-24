@@ -1,0 +1,33 @@
+.money-transfer-item {
+  display: inline-block;
+  background: url("../img/money-transfer.png") no-repeat 25px center; }
+
+.mobile-item {
+  display: inline-block;
+  background: url("../img/mobile.png") no-repeat 25px center; }
+
+.cashpower-item {
+  display: inline-block;
+  background: url("../img/cashpower.png") no-repeat 25px center; }
+
+.e-commerce-item {
+  display: inline-block;
+  background: url("../img/e-commerce.png") no-repeat 25px center; }
+
+.profile-item {
+  display: inline-block;
+  background: url("../img/profile.png") no-repeat 25px center; }
+
+.users-list-item {
+  display: inline-block;
+  background: url("../img/users-list.png") no-repeat 25px center; }
+
+.settings-item {
+  display: inline-block;
+  background: url("../img/settings.png") no-repeat 25px center; }
+
+.logout-item {
+  display: inline-block;
+  background: url("../img/logout.png") no-repeat 25px center; }
+
+/*# sourceMappingURL=_functions.css.map */

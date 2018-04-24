@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avatar edit personal info</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        	<div class="wrapper-header">
+                <div class="header clearfix">
+                    <div class="slider">
+                        <a href="#">
+                            <span class="first-triangle"></span>
+                            <span class="second-triangle"></span>
+                            <span class="page">Previous page</span>
+                        </a>
+                    </div>
+                    <div class="dropdown-menu clearfix">
+                        <div class="user-name">Dashboard User</div>
+                        <div class="menu">
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                        </div>
+                        <ul class="dropdown-menu-content">
+                            <li>
+                                <ul>
+                                    <li class="money-transfer-item"><a href="#" >Money Transfer</a></li>
+                                    <li class="mobile-item"><a href="#" >Mobile Top-up</a></li>
+                                    <li class="cashpower-item"><a href="#">Cashpower</a></li>
+                                    <li class="e-commerce-item"><a href="#">E-commerce</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="profile-item"><a href="#">Profile</a></li>
+                                    <li class="users-list-item"><a href="#">Users list</a></li>
+                                    <li class="settings-item"><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="logout-item"><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+            <div class="wrapper-content">
+                <div class="avatar-content content-auto"> 
+                    <figure class="new-picture-small">
+                        <img class="avatar-small" src="img/hughjackman-small.png" alt="avatar icon">
+                        <figcaption class="avatar-header">Dashboard User</figcaption>
+                        <figcaption class="avatar-additional-header">Power User</figcaption>
+                    </figure>
+                    <div class="static">
+                        <button class="confirm-icon avatar-edit" type="submit" form="user-personal-info" value="Submit"><img src="img/confirm-icon.png">
+                        </button><button class="cancel-icon" type="reset" form="user-personal-info" value="Reset"><img src="img/cancel-icon.png"></button>
+                    </div>                
+                </div>
+                <div class="content content-auto"> 
+                    <div class="order-menu">
+                        <div class="order-menu-item edit-menu-item"><a href="#">Edit personal info</a></div>
+                        <form class="currency-rate" method="post" id="user-personal-info">
+                            <label for="phone-number" class="order-description">Phone number</label>
+                            <input class="add-document" type="tel" name="phone-number" id="phone-number" placeholder="Phone number" required>
+                            <label for="e-mail" class="order-description">Email</label>
+                            <input class="add-document add-value" type="email" name="e-mail" id="e-mail" placeholder="email@address.com" required>
+                            <label for="country" class="order-description">Country</label>
+                            <input class="add-document" type="text" name="country" id="country" placeholder="Input your text here" required>
+                            <label for="error-description" class="error-description">Error description</label>
+                            <input class="add-document error-description" type="text" name="error-description" id="error-description" placeholder="Input value" required>
+                            <label for="city" class="order-description">City</label>
+                            <input class="add-document" type="text" name="city" id="city" placeholder="Input your text here" required>
+                            <label for="street-address" class="order-description">Street address</label>
+                            <input class="add-document" type="text" name="street-address" id="street-address" placeholder="Input your text here" required>
+                            <label for="zip-code" class="order-description">ZIP code</label>
+                            <input class="add-document" type="text" name="zip-code" id="zip-code" placeholder="Input your text here" required>
+                            <label for="birthday" class="order-description">Date of birth</label>
+                            <input class="add-document" type="text" name="birthday" id="birthday" placeholder="Input your text here" required>
+                            <div class="order-details-item">
+                                <div class="order-description">Gender</div>
+                                <label class="select-order-details">
+                                    <select form="user-personal-info" required>
+                                        <option value="select-item" selected>Select option</option>
+                                        <option value="select-item">item2</option>
+                                        <option value="select-item3">item3</option>
+                                    </select>
+                                </label> 
+                            </div>
+                            <label for="birth-place" class="order-description">Place of birth</label>
+                            <input class="add-document" type="text" name="birth-place" id="birth-place" placeholder="Input your text here" required>
+                        </form>
+                        <div class="order-menu-item"><a href="#">Change password</a></div>
+                    </div>    
+                </div>     
+            </div>    
+        </div>
+    </body>
+</html>

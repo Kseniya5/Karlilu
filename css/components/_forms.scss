@@ -1,0 +1,351 @@
+.description-input {
+	@extend .date;
+	padding-top: $padding-small;
+	padding-bottom: $padding-smallest;
+}
+.content {
+	.currency-rate {
+		padding-left: $padding-normal;
+	}
+}
+.button-absolute {
+	position: absolute;
+	width: 215px;
+	left: 0;
+	right: 0;
+	bottom: 45px;
+	margin: 0 auto;
+}
+.static {
+	padding-top: $padding-middle;
+	padding-bottom: $padding-middle;
+	display: block;
+	margin: 0 auto;
+	margin-left: - $padding-normal;
+	width: auto;
+	text-align: center;
+	button {
+		position: static;
+	}		
+}
+.confirm-icon {
+	margin-right: 135px;
+}
+.avatar-content {
+	.static {
+		margin-left: 0;
+		margin-bottom: - $padding-big;
+	}
+}    
+.currency-rate {
+	input {
+		margin-top: -4px;
+		height: 38px;
+		width: 228px;
+	}
+	.input-data {
+		width: 250px;
+		margin: auto;
+		padding-bottom: $padding-smallest;
+	}
+}
+.currency-rate input, .select-order-details select {	
+	padding: 0;
+	padding-right: $padding-smallest;
+	padding-left: $padding-smallest;
+	border-radius: 2px;
+	background-color: $white;
+	border: solid 1px $jade-green;
+	@include placeholder-currency-rate;
+	&.error-description {
+		border-color: $rose;
+		color: $rose;
+		&::placeholder { 
+			color: $rose; 
+		}
+		&:-ms-input-placeholder { 
+			color: $rose;
+		}
+		&::-ms-input-placeholder { 
+			color: $rose;
+		}
+	}		
+}
+.add-document {
+	::placeholder { 
+		@include placeholder-currency-rate;
+		opacity: 1; 
+	}
+	&:-ms-input-placeholder { 
+		@include placeholder-currency-rate;
+	}
+	&::-ms-input-placeholder { 
+		@include placeholder-currency-rate;
+	}
+}	
+.order-description {
+	padding-bottom: $little-margin;
+	@include secondary-text;
+	display: block;
+	text-align: left;
+}
+.error-description {
+	display: block;
+	@include body-text;
+	color: $rose;
+	text-align: left;
+}
+.avatar-content .currency-rate {
+	padding-left: 0;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 248px;
+	label {
+		padding-top: $padding-small;
+	}
+}
+.currency-rate {
+	.add-document {
+		margin-top: 0;
+		margin-bottom: $padding-smallest;
+		&::placeholder { 
+			color: $warm-grey-less-strong;
+		}
+		&:-ms-input-placeholder { 
+			color: $warm-grey-less-strong;
+		}
+		&::-ms-input-placeholder { 
+			color: $warm-grey-less-strong;
+		}
+		&.add-value {
+			margin-top: 0;
+			&::placeholder { 
+				color: $medium-grey;
+			}
+			&:-ms-input-placeholder { 
+				color: $medium-grey;
+			}
+			&::-ms-input-placeholder { 
+				color: $medium-grey;
+			}	
+		}	
+	}
+	.error-description {
+		margin-top: 0;
+	}
+}
+.content-sign-in {
+	.add-document {
+		margin-bottom: 0;
+	}
+}
+.edit-menu-item + .currency-rate {
+	padding-top: $padding-normal;
+	input {
+		margin-bottom: $padding-middle;
+	}
+}
+.select-order-details select {
+	height: 40px;
+	width: 250px;
+	cursor: pointer;
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+	position: relative;
+	&::-ms-expand { 
+    	display: none; /* hide the default arrow in ie10 and ie11 */
+	}
+}
+.select-order-details {
+	position:relative;
+	display: inline-block;
+	margin-bottom: $padding-small - 5px;
+	&:after {
+	    content: '';
+	    width: 46px;
+	    height: 40px;
+	    vertical-align: middle;
+	    display: inline-block;
+	    position:absolute;
+	    top: 0;
+	    right: 0;
+	    background: url(../img/next-icon.png) 0 0 no-repeat;
+	    pointer-events:none;
+	    cursor: pointer;
+	    z-index: 3;
+	}
+}
+input + .order-details-item .select-order-details {
+	margin-bottom: $padding-middle;
+}
+.confirm-icon,.cancel-icon {
+	border: none;
+	padding: 0;
+	background: none;
+	img {
+		width: 40px;
+    	height: 40px;
+    	border-radius: 100%;
+    	box-shadow: 0 2px 4px 0 $light-grey;
+	}
+}
+.order-details-item + .currency-rate {
+	padding-left: 0;
+	margin-top: - $padding-middle;
+}
+button:focus {
+  outline: none;
+}
+form {
+	&.submit {
+		display: block;
+    	width: 270px;
+    	margin: 0 auto;
+    }	
+}
+.confirm-button, .cancel-button {
+	margin-top: $margin-big;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	@include body-text;
+	color: $white;
+	border: none;
+	border-radius: 2px;
+}
+.confirm-button {
+	margin-right: $margin-large;
+	background-color: $jade-green;
+	box-shadow: 0 1px 4px 0 $jade-green;
+}
+.order-menu + form .confirm-button, .order-menu + form .cancel-button {
+	margin-top: $padding-middle;
+	margin-bottom: $padding-middle;
+}
+form.filter {
+	text-align: center;
+}
+.filter-button {
+	@extend .confirm-button;
+	margin: 0;
+	margin-top: $margin-small;
+	margin-bottom: $margin-small;
+	padding-left: $padding-smallest;
+	text-align: left;
+	&:before {
+		content: "";
+		padding-right: $padding-small;
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		vertical-align: middle;
+		background: url(../img/filter-icon.png) left center no-repeat;
+	}
+}
+.cancel-button {
+	background-color: $purpure;
+	box-shadow: 0 1px 4px 0 $purpure;
+}	
+.order-details .order-description {
+	padding-bottom: $little-margin;
+	display: block;
+}
+.bank-description {
+	padding-top: $padding-smallest;
+}
+.content.select-form {
+	padding-top: 1px;
+	background-color: $grey-darker;
+}
+.select-option {
+	margin: 0 auto;
+	margin-top: $padding-bigger - 1px;
+	width: 250px;
+	position: relative;
+	background-color: $white;
+	box-shadow: 0 0 4px 0 $warm-grey-strong;
+	.secondary-header {
+		padding-left: $padding-small;
+		height: 65px;
+		line-height: 65px;
+		border-bottom: $border-order;
+	}
+	label {
+		@include body-text;
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+		&:before {
+			content: "";
+			margin-right: $padding-small;
+			margin-top: -3px;
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			vertical-align: middle;
+			background: url(../img/checkbox-icon.png) center center no-repeat;
+		}
+	}
+	.checkbox {
+		padding-left: $padding-small;
+		padding-bottom: $padding-middle;
+		&:first-of-type {
+			padding-top: $padding-small;
+		}
+		&:nth-last-of-type(2) {
+			padding-bottom: 165px;
+		}
+	}
+	.select-option-button {
+		position: absolute;
+		bottom: $padding-small;
+		right: $padding-small;
+	}
+}
+input[type="checkbox"] {
+	display: none;
+	&:checked + label {
+		font-weight: bold;
+		color: $green;
+		&:before {
+			background-image: url(../img/checkbox-icon-checked.png);
+		}
+	}
+}
+.secondary-header {
+	@include secondary-header;
+}
+.submit-button {
+	padding: 0;
+	border: none;
+	background: none;
+	@include secondary-text;
+	font-family: 'pragmaticaregular';
+	color: $jade-green;
+}
+.refused-button {
+	@extend .submit-button;
+	padding-left: $padding-middle;
+	color: $purpure;
+}
+.submit-icon {
+	margin: 0 auto;
+	margin-top: 15px;
+	display: block;
+	width: 150px;
+	height: 45px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px 0 $light-grey;
+	background-color: $light-grey;
+	@include body-text;
+	color: $white;
+	&:hover {
+		background-color: $jade-green;
+		box-shadow: 0 1px 4px 0 $jade-green;
+	}
+}

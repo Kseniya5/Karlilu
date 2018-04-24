@@ -1,0 +1,9 @@
+figure {
+  text-align: center; }
+  figure .avatar {
+    border-radius: 100%;
+    box-shadow: 0 1px 4px 0 #717171; }
+
+.new-picture .avatar {
+  width: 290px;
+  height: 290px; }

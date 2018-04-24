@@ -1,0 +1,54 @@
+@mixin main-hader {
+ 	font:  24px  'pragmaticabold';
+ 	color: $medium-grey;
+}
+@mixin secondary-header {
+	font:  18px  'pragmaticabold';
+ 	color: $medium-grey;
+}
+@mixin additional-header {
+	font:  16px  'pragmaticabold';
+ 	color: $medium-grey;
+}
+@mixin body-text {
+	font:  14px  'pragmaticaregular';
+ 	color: $medium-grey;
+}
+@mixin secondary-text {
+	font:  12px  'pragmaticalightcregular';
+ 	color: $medium-grey;
+}
+@mixin link-text {
+	font:  12px  'pragmaticalightcregular';
+ 	color: $azure;
+}
+@mixin input-placeholder {
+	font:  12px  'pragmaticalightcregular';
+ 	color: $input-color;
+}
+@mixin image-title {
+	@include secondary-text;
+	font-size: 9px;
+}
+@mixin image-content {
+	@include secondary-text;
+	font-size: 8px;
+}
+@mixin placeholder-currency-rate {
+	@include body-text;
+}
+@mixin small-screen {
+	@media (min-width: 375px) {
+		@content;
+	}
+}
+@mixin medium-screen {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin large-screen {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}

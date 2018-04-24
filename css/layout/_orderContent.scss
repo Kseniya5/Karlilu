@@ -1,0 +1,257 @@
+html, body, .wrapper, .order-menu {
+	height: 100%;
+}
+a {
+	cursor: pointer;
+}
+.content {
+	min-height: calc(100% - 80px);
+	position: relative;
+	@include large-screen {
+		min-height: calc(100% - 80px / 2);
+	}
+}
+.content {
+	background-color: $warm-grey;
+	.wrapper-order-details {	
+		padding-top: $padding-small;
+		padding-bottom: $padding-big;
+		.order-description {
+			padding-bottom: 0;
+		}
+	}
+	.order-menu {	
+		.order-details {
+			padding-left: $padding-normal;
+			.order-value {
+				@include additional-header;
+				padding-bottom: 0;
+			}	
+		}
+		.order-details-item1 {
+			padding-top: $padding-small;
+			width: $order-details-item1-width / $mobile-width * 100%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.order-details-item2 {
+			padding-top: $padding-small;
+			width: $order-details-item2-width / $mobile-width * 100%;
+			display: inline-block;
+			.order-value {
+				@include body-text;
+			}
+			.order-info {
+				&:last-child {
+					padding-top: $padding-small;
+				}
+			}	
+		}
+	} 
+}
+.passport-image {
+	padding-bottom: $padding-middle;
+}
+.wrapper-order-details .order-details:first-child {
+	padding-left: $padding-normal - $border-order-info;
+}
+.order-menu {
+	.order-menu-item {
+		padding-left: $padding-normal;
+		border: $border-order;
+		background-color: $warm-grey;
+		&.description {
+			padding-left: 0;
+		}
+		&.active {
+			background-color: transparent;
+		}
+		&.active a {				
+			font-size: 18px;
+			position: relative;
+		}
+		a  {
+			@include additional-header;
+			line-height: $order-menu-item-height;
+		}
+		.order-menu-header {
+			padding-top: $padding-small;
+			@extend a;
+			line-height: normal;
+		}
+		.currency-item {
+			padding-top: $padding-small;
+			@extend a;
+			line-height: normal;
+		}
+		.date {
+			padding-bottom: $padding-small;
+		}	
+	}	
+	.change-rate {
+		padding-top: $padding-small;
+		@include additional-header;
+	}
+}
+.edit-icon {
+	height: 40px;
+	position: absolute;
+	top: $padding-middle;
+	right: $padding-middle;
+	a {
+		height: 100%;
+		display: inline-block;
+	}
+}
+.date {
+	padding-top: $padding-smallest;
+	@include secondary-text;
+}
+.content {
+	.header-submit {
+		padding-top: 167px;
+		padding-bottom: $padding-small;
+		@include main-hader;
+		text-align: center;
+	}
+	.description-submit {
+		margin: 0 auto;
+		width: 252px;
+		text-align: center;
+		@include body-text;
+	}	
+}	
+.order-details {
+	height: 100%;
+	.single-order {
+		padding-left: $padding-normal;
+		& + .edit-icon {
+			top: $padding-normal;
+			right: $padding-normal;
+		}
+	}
+	.total-order {
+		padding-left: $padding-normal;
+		border-top: $border-order;
+	}
+	.order-value {
+		@include body-text;
+		padding-bottom: $padding-smallest;	
+	}
+}
+.order-details-header {
+	padding-left: $padding-normal;
+	padding-top: $padding-small;
+	padding-bottom: $padding-small;
+	@include secondary-header;
+}
+.total-order.padding-total-order {
+	padding-top: $padding-smallest;
+}
+.order-value-undefined {
+	padding-bottom: $padding-smallest;
+	@include body-text;
+	color: $warm-grey-strong;
+}
+.order-menu-item + div .order-details-header {
+	padding-top: $padding-middle;
+	padding-bottom: $padding-middle;
+}
+.order-menu-item + .order-details .currency-rate input {
+	margin-top: 0;
+}
+.order-menu {
+	.bank-info {
+		border: none;
+	}	
+}
+.select-date {
+	padding: $padding-smallest $padding-small;
+	background-color: $emerald;
+	.calendar-date, .month {
+		@include body-text;
+		color: $white;	
+	}
+	.month {
+		padding-bottom: $little-margin;
+	}
+	.calendar-date {
+		float: left;
+		padding-right: $padding-small;
+		&:nth-last-child(2), &:last-child {
+			color: $white-deeper;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+		span {
+			font-size: 12px;
+			display: block;
+			text-align: center;
+			&.week-day {
+				padding-bottom: $padding-smallest;
+				font-size: 18px;
+			}
+			&.day {
+				width: 29px;
+				height: 29px;
+				line-height: 29px;	
+				&.active {
+					background-color: $white-grey-deeper;
+				}
+			}	
+		}
+	}		
+}
+.order-list-item {
+	float: left;
+	span {
+		@include body-text;
+		display: block;
+		span {
+			@include secondary-text;
+			display: inline-block;
+		}		
+	}
+	.order-number {
+		padding-bottom: $little-margin;
+	}
+} 
+.ammount {
+	float: right;
+	@include additional-header;
+}
+.select-date ~ .order-menu .order-menu-item {
+	margin-top: $padding-smallest;
+	padding: $padding-small $padding-small $padding-small ($padding-small - 5px);
+}
+.select-date + .order-menu {
+	height: auto;
+}
+.order-menu {
+	.processing {
+		border-left: solid 5px $dark-yellow;
+	}
+	.approved, .declined, .delivered {
+		@extend .processing;
+	}
+	.approved {
+		border-left-color: $green;
+	}
+	.declined {
+		border-left-color: $rusty-red;
+	}
+	.delivered {
+		border-left-color: $grey;
+	}
+}
+.content .order-menu {
+	.border-width {
+		margin-bottom: $padding-smallest;
+		padding-right: $padding-big;
+		border-left-width: 20px;
+		&:hover {
+			background-color: $sand-yellow;
+		}
+	}
+}	

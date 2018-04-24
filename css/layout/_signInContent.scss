@@ -1,0 +1,67 @@
+.content-sign-in {
+	text-align: center;
+	.logo-small {
+		padding-top: $padding-normal;
+		display: block;
+		@include large-screen {
+			padding-left: $padding-normal;
+			text-align: left;
+			img {
+				width: 100px;
+			}
+		}
+	}
+	.sign-in-header {
+		padding-top: $padding-huge;
+		@include main-hader;
+	}
+	.hint {
+		padding-bottom: $padding-normal;
+		margin: 0 auto;
+		width: 272px;
+		@include body-text;		
+	}
+	form 
+		.link-text {
+			display: none;
+			position: static;
+			float: right;
+			@include link-text;
+			@include large-screen {
+				display: block;
+				margin-top: $little-margin;
+			}	
+		}
+	.link-text 	{
+		@include link-text;
+		font-family: "pragmaticabold";
+		display: block;
+		position: absolute;
+		bottom: $padding-big;
+		left: 0;
+		right: 0;
+		@include large-screen {
+			display: none;
+		}
+	}
+}
+.logo {
+	margin-top: 255px;
+	display: block;
+	@include large-screen {
+		padding-top: $padding-normal;
+		padding-left: $padding-normal;
+		text-align: left;
+		margin-top: 0;
+		img {
+			width: 100px;
+		}
+	}
+}
+.loader {
+	display: none;
+	@include large-screen {
+		display: block;
+		margin-top: 255px;
+	}
+}

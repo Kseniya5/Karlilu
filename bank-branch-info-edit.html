@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank branch info edit</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        	<div class="wrapper-header">
+                <div class="header clearfix">
+                    <div class="slider">
+                        <a href="#">
+                            <span class="first-triangle"></span>
+                            <span class="second-triangle"></span>
+                            <span class="page">Previous page</span>
+                        </a>
+                    </div>
+                    <div class="dropdown-menu clearfix">
+                        <div class="user-name">Dashboard User</div>
+                        <div class="menu">
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                        </div>
+                        <ul class="dropdown-menu-content">
+                            <li>
+                                <ul>
+                                    <li class="money-transfer-item"><a href="#" >Money Transfer</a></li>
+                                    <li class="mobile-item"><a href="#" >Mobile Top-up</a></li>
+                                    <li class="cashpower-item"><a href="#">Cashpower</a></li>
+                                    <li class="e-commerce-item"><a href="#">E-commerce</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="profile-item"><a href="#">Profile</a></li>
+                                    <li class="users-list-item"><a href="#">Users list</a></li>
+                                    <li class="settings-item"><a href="#">Settings</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="logout-item"><a href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="content">
+                <div class="order-details">
+                    <h2 class="order-details-header">Bank branch info</h2> 
+                    <div class="single-order">
+                        <div class="order-details-item">
+                            <div class="order-description">Bank branch</div>
+                            <label class="select-order-details">
+                                <select form="form-number" required>
+                                    <option value="select-item" selected>Select option</option>
+                                    <option value="select-item">item2</option>
+                                    <option value="select-item3">item3</option>
+                                </select>
+                            </label> 
+                        </div>
+                        <form class="currency-rate" method="post" id="form-number">
+                            <div class="button-absolute">
+                                <button class="confirm-icon" type="submit" form="form-number" value="Submit"><img src="img/confirm-icon.png">
+                                </button><button class="cancel-icon" type="reset" form="form-number" value="Reset"><img src="img/cancel-icon.png"></button>
+                            </div>
+                        </form>   
+                    </div>                                      
+                </div>    
+            </div>
+        </div>
+    </body>
+</html>      

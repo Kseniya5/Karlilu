@@ -1,0 +1,55 @@
+.order-menu {
+	.rates {
+		height: calc(100% - 137px);
+		tr:nth-last-child(2), tr:last-child {
+			opacity: 0.5;
+		}
+		.date {
+			padding-left: $padding-normal;
+			padding-top: $padding-normal - 2px;
+			width: 175px;	
+		}
+		.last-child {
+			padding-bottom: ($padding-normal - 2px) * 2;
+		}	
+		.rate-item {
+			width: 57px;
+			@include body-text;
+		}
+	}	
+}
+.triangle-red {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-style: solid;
+	border-width: 10px 5px 0 5px;
+	border-color: $purpure transparent transparent transparent;
+	vertical-align: middle;
+}
+.triangle-green {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-style: solid;
+	border-width: 0 5px 10px 5px;
+	border-color: transparent transparent $jade-green transparent;
+	vertical-align: middle;
+}
+table {
+	.bank-details {
+		td {
+			padding-right: $padding-big;
+		} 
+		.branch-name {
+			padding-top: $padding-small;
+			@include body-text;
+		}
+		.branch-phone {
+			@extend .branch-name;
+		}
+		.branch-number {
+			@include secondary-text;
+		}
+	}
+}	

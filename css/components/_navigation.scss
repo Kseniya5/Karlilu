@@ -1,0 +1,97 @@
+.dropdown-menu {
+	float: right;
+	position: relative;
+	.menu {
+		padding: ($padding-middle + 0.5px) $padding-middle;
+		display: block;
+		float: left;
+		@include large-screen {
+			padding: 13px 14px;
+		}
+		.menu-line {
+			width: 36px;
+			height: 3px;
+			display: block;
+			background-color: $white;
+			margin-bottom: $little-margin;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			@include large-screen {
+				width: 20px;
+				height: 2px;
+				margin-bottom: $little-margin - 1px;
+			}
+		}	
+    }
+}
+.user-name {
+	display: none;
+	float: left;
+	padding-right: 60px;
+	line-height: $header-height;
+	@include large-screen {
+		display: block;
+		vertical-align: middle;
+		@include body-text;
+		line-height: $header-height / 2;
+		color: $white;
+		&:before {
+			margin-right: $padding-smallest;
+			content: "";
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(3, 2, 2, 0.6);
+			display: inline-block;
+			vertical-align: middle;
+			background: url(../img/hughjackman-user.png) no-repeat center center;
+		}
+	}
+}
+.dropdown-menu-content {
+    display: none;
+    position: absolute;
+    top: $header-height;
+    right: 0;
+    background-color: $black;
+    width: 298px;
+    z-index: 99;
+    @include large-screen {
+    	top: $header-height / 2;
+    	width: 220px;
+    }
+    ul {
+    	border-bottom: $border-order;
+    	border-color: $white-grey;
+    	& :last-child {
+    		border-bottom: none;
+    	}
+    	li {
+    		width: 100%;
+    	}
+    }
+    a {
+    	padding: 24px 25px 23px 80px;
+    	display: inline-block;
+    	width: 193px;
+    	@include body-text;
+    	font-size: 20px;
+    	color: $white;
+    	@include large-screen {
+    		padding: 12px 20px 12px 55px;
+    		width: 145px;
+			@include body-text;
+			color: $white;
+    	}
+    	&:hover {
+    		background-color: $white-grey;
+    	}
+    }
+}
+.dropdown-menu:hover .menu {
+	background-color: $black;
+}
+.dropdown-menu:hover .dropdown-menu-content {
+    display: block;
+}

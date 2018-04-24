@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'pragmaticabold';
+  src: url("../fonts/pragmatica-bold_allfont.net-webfont.woff2") format("woff2"), url("../fonts/pragmatica-bold_allfont.net-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'pragmaticalightcregular';
+  src: url("../fonts/pragmaticalightc_36377-webfont.woff2") format("woff2"), url("../fonts/pragmaticalightc_36377-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'pragmaticaregular';
+  src: url("../fonts/pragmatica_allfont.ru-webfont.woff2") format("woff2"), url("../fonts/pragmatica_allfont.ru-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=_typography.css.map */
