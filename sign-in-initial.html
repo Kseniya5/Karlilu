@@ -5,8 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -18,15 +20,15 @@
                 <div class="hint">Type in your Email/Password to access</div> 
                 <form class="currency-rate" method="post" id="form-number">
                     <div class="input-data">
-                        <input class="add-document" type="email" name="e-mail" id="e-mail" placeholder="Input your text here" required>
+                        <input class="add-document" type="text" name="email" id="e-mail" placeholder="Input your text here">
                     </div>    
                     <div class="input-data">
-                        <input class="add-document" type="password" name="password" id="password" placeholder="Input your text here" required>
+                        <input class="add-document" type="password" name="password" id="password" placeholder="Input your text here">
                         <a class="link-text" href="#">Restore password</a>
                         <div class="clear"></div>
                     </div> 
                     <button class="submit-icon" type="submit" form="form-number" value="Submit">Submit</button>
-                </form>
+                </form>    
                 <a class="link-text" href="#">Restore password</a>         
             </div>
         </div>

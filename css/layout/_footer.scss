@@ -6,7 +6,7 @@
 	position: fixed;
 	bottom: 0;
 	background-color: $green;
-	&.error {
+	&.footer-error {
 		background-color: $purpure;
 		.order-action {
 			width: 217px;

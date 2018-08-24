@@ -42,23 +42,19 @@ figure {
 	padding-top: $padding-middle;
 }
 .wrapper-content, .avatar-content {
-	height: calc(100% - 80px);
+	min-height: calc(100% - 80px);
+	@include large-screen {
+		min-height: calc(100% - 80px / 2);
+	}
 }
 .avatar-content {
 	padding-bottom: $padding-big;
-}
-.content-auto {
-	height: auto;
 }
 .avatar-content + .content .order-details .edit-icon {
 	top: -20px;
 }
 .avatar-content + .content .order-details .single-order {
 	padding-top: $padding-normal;
-}
-.padding-content {
-	height: auto;
-	padding-bottom: $footer-height;
 }
 .avatar-content.content-auto + .content .order-menu-padding {
 	padding-bottom: 15px;

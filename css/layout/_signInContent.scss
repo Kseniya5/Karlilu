@@ -46,7 +46,7 @@
 	}
 }
 .logo {
-	margin-top: 255px;
+	padding-top: 255px;
 	display: block;
 	@include large-screen {
 		padding-top: $padding-normal;

@@ -5,8 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -62,7 +64,7 @@
                         <div  class="order-details-item">
                             <form class="currency-rate" method="post" id="form-number">
                                 <label for="document" class="order-description">Document name</label>
-                                <input class="add-document add-value" type="text" name="" id="document" placeholder="Input value" required>
+                                <input class="add-document add-value" type="text" name="new-document" id="document" placeholder="Input value">
                                 <div class="button-absolute">
                                     <button class="confirm-icon" type="submit" form="form-number" value="Submit"><img src="img/confirm-icon.png">
                                     </button><button class="cancel-icon" type="reset" form="form-number" value="Reset"><img src="img/cancel-icon.png"></button>

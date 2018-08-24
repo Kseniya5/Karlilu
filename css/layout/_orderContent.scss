@@ -11,6 +11,12 @@ a {
 		min-height: calc(100% - 80px / 2);
 	}
 }
+.content-auto {
+	height: auto;
+	@include large-screen {
+		height: auto;
+	}
+}
 .content {
 	background-color: $warm-grey;
 	.wrapper-order-details {	
@@ -59,12 +65,12 @@ a {
 	.order-menu-item {
 		padding-left: $padding-normal;
 		border: $border-order;
-		background-color: $warm-grey;
+		background-color: $warm-dark-grey;
 		&.description {
 			padding-left: 0;
 		}
 		&.active {
-			background-color: transparent;
+			background-color: $warm-grey;
 		}
 		&.active a {				
 			font-size: 18px;
@@ -73,6 +79,7 @@ a {
 		a  {
 			@include additional-header;
 			line-height: $order-menu-item-height;
+			display: block;
 		}
 		.order-menu-header {
 			padding-top: $padding-small;
@@ -125,6 +132,12 @@ a {
 	height: 100%;
 	.single-order {
 		padding-left: $padding-normal;
+		.currency-rate .select-order-details {
+			margin-left: -$padding-normal;
+		}
+		.currency-rate .order-description {
+			margin-left: -$padding-normal;
+		}
 		& + .edit-icon {
 			top: $padding-normal;
 			right: $padding-normal;

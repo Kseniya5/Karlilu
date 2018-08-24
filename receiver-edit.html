@@ -5,8 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -55,32 +57,32 @@
                 <div class="order-details">
                     <h2 class="order-details-header">Receiver</h2> 
                     <div class="single-order">
-                        <div class="order-details-item">
-                            <div class="order-description">ID type</div>
-                            <label class="select-order-details">
-                                <select form="form-number" required>
-                                    <option value="select-item" selected>Select option</option>
-                                    <option value="select-item">item2</option>
-                                    <option value="select-item3">item3</option>
-                                </select>
-                            </label> 
-                        </div>
-                        <div class="order-details-item">
-                            <div class="order-description">ID number</div>
-                            <label class="select-order-details">
-                                <select form="form-number" required>
-                                    <option value="select-item" selected>Select option</option>
-                                    <option value="select-item">item2</option>
-                                    <option value="select-item3">item3</option>
-                                </select>
-                            </label> 
-                        </div>
                         <form class="currency-rate" method="post" id="form-number">
-                            <div class="button-absolute">
-                                <button class="confirm-icon" type="submit" form="form-number" value="Submit"><img src="img/confirm-icon.png">
-                                </button><button class="cancel-icon" type="reset" form="form-number" value="Reset"><img src="img/cancel-icon.png"></button>
+                            <div class="order-details-item">
+                                <div class="order-description">ID type</div>
+                                <label class="select-order-details">
+                                    <select form="form-number" name="idtype-select">
+                                        <option value="select-item1" selected>Select option</option>
+                                        <option value="select-item2">item2</option>
+                                        <option value="select-item3">item3</option>
+                                    </select>
+                                </label> 
                             </div>
-                        </form> 
+                            <div class="order-details-item">
+                                <div class="order-description">ID number</div>
+                                <label class="select-order-details">
+                                    <select form="form-number" name="idnumber-select">
+                                        <option value="select-item1" selected>Select option</option>
+                                        <option value="select-item2">item2</option>
+                                        <option value="select-item3">item3</option>
+                                    </select>
+                                </label> 
+                            </div>
+                        </form>
+                        <div class="button-absolute">
+                            <button class="confirm-icon" type="submit" form="form-number" value="Submit"><img src="img/confirm-icon.png">
+                            </button><button class="cancel-icon" type="reset" form="form-number" value="Reset"><img src="img/cancel-icon.png"></button>
+                        </div>
                     </div>                                       
                 </div>    
             </div>

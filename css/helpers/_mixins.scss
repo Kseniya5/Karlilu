@@ -24,7 +24,7 @@
 }
 @mixin input-placeholder {
 	font:  12px  'pragmaticalightcregular';
- 	color: $input-color;
+ 	color: $warm-grey-less-strong;
 }
 @mixin image-title {
 	@include secondary-text;
@@ -39,6 +39,11 @@
 }
 @mixin small-screen {
 	@media (min-width: 375px) {
+		@content;
+	}
+}
+@mixin average-screen {
+	@media (min-width: 480px) {
 		@content;
 	}
 }

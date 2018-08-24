@@ -5,8 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -68,33 +70,32 @@
                         <div class="order-menu-item edit-menu-item"><a href="#">Edit personal info</a></div>
                         <form class="currency-rate" method="post" id="user-personal-info">
                             <label for="phone-number" class="order-description">Phone number</label>
-                            <input class="add-document" type="tel" name="phone-number" id="phone-number" placeholder="Phone number" required>
-                            <label for="e-mail" class="order-description">Email</label>
-                            <input class="add-document add-value" type="email" name="e-mail" id="e-mail" placeholder="email@address.com" required>
+                            <input class="add-document" type="tel" name="phone-number" id="phone-number" placeholder="Phone number">
+                            <label for="email" class="order-description">Email</label>
+                            <input class="add-document add-value" type="text" name="email" id="email" placeholder="Input your text here">
                             <label for="country" class="order-description">Country</label>
-                            <input class="add-document" type="text" name="country" id="country" placeholder="Input your text here" required>
-                            <label for="error-description" class="error-description">Error description</label>
-                            <input class="add-document error-description" type="text" name="error-description" id="error-description" placeholder="Input value" required>
+                            <input class="add-document" type="text" name="country" id="country" placeholder="Input your text here">
+                            <input class="add-document" type="text" name="" id="" placeholder="Input your text here">
                             <label for="city" class="order-description">City</label>
-                            <input class="add-document" type="text" name="city" id="city" placeholder="Input your text here" required>
+                            <input class="add-document" type="text" name="city" id="city" placeholder="Input your text here">
                             <label for="street-address" class="order-description">Street address</label>
-                            <input class="add-document" type="text" name="street-address" id="street-address" placeholder="Input your text here" required>
+                            <input class="add-document" type="text" name="street-address" id="street-address" placeholder="Input your text here">
                             <label for="zip-code" class="order-description">ZIP code</label>
-                            <input class="add-document" type="text" name="zip-code" id="zip-code" placeholder="Input your text here" required>
+                            <input class="add-document" type="text" name="zip-code" id="zip-code" placeholder="Input your text here">
                             <label for="birthday" class="order-description">Date of birth</label>
-                            <input class="add-document" type="text" name="birthday" id="birthday" placeholder="Input your text here" required>
+                            <input class="add-document" type="text" name="birthday" id="birthday" placeholder="Input your text here">
                             <div class="order-details-item">
                                 <div class="order-description">Gender</div>
                                 <label class="select-order-details">
-                                    <select form="user-personal-info" required>
-                                        <option value="select-item" selected>Select option</option>
-                                        <option value="select-item">item2</option>
+                                    <select form="user-personal-info" name="gender-select">
+                                        <option value="select-item1" selected>Select option</option>
+                                        <option value="select-item2">item2</option>
                                         <option value="select-item3">item3</option>
                                     </select>
                                 </label> 
                             </div>
                             <label for="birth-place" class="order-description">Place of birth</label>
-                            <input class="add-document" type="text" name="birth-place" id="birth-place" placeholder="Input your text here" required>
+                            <input class="add-document" type="text" name="birth-place" id="birth-place" placeholder="Input your text here">
                         </form>
                         <div class="order-menu-item"><a href="#">Change password</a></div>
                     </div>    

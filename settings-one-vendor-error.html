@@ -5,8 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
         <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -87,10 +89,9 @@
                         <h2 class="order-details-header">Add new branch</h2> 
                         <form class="currency-rate" method="post" id="form-number">
                             <label for="add-branch" class="order-description">Branch name</label>
-                            <input class="add-document" type="text" name="add-branch" id="add-branch" placeholder="Input your text here" required>
+                            <input class="add-document" type="text" name="add-branch" id="add-branch" placeholder="Input your text here">
                             <label for="add-phone" class="order-description">Phone number</label>
-                            <label for="add-phone" class="error-description">Error description</label>
-                            <input class="add-document error-description" type="text" name="add-phone" id="add-phone" placeholder="Input value" required>
+                            <input class="add-document error-description" type="text" name="add-phone" id="add-phone" placeholder="Input your text here">
                             <div class="static">
                                 <button class="confirm-icon" type="submit" form="form-number" value="Submit"><img src="img/confirm-icon.png">
                                 </button><button class="cancel-icon" type="reset" form="form-number" value="Reset"><img src="img/cancel-icon.png"></button>
